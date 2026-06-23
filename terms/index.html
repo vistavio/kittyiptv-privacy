@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kullanım Koşulları / Terms of Service — Sonet IPTV</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f13;
+      color: #e2e8f0;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header { margin-bottom: 48px; border-bottom: 1px solid rgba(139,92,246,0.3); padding-bottom: 24px; }
+    .app-name { font-size: 1rem; color: rgba(139,92,246,0.9); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px; }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    .updated { font-size: 0.85rem; color: rgba(226,232,240,0.45); }
+    .lang-switch { margin-top: 16px; display: flex; gap: 8px; }
+    .lang-switch a { font-size: 0.85rem; color: rgba(139,92,246,0.8); text-decoration: none; border: 1px solid rgba(139,92,246,0.3); border-radius: 4px; padding: 3px 10px; }
+    .lang-switch a:hover { background: rgba(139,92,246,0.15); }
+    .lang-switch a.active { background: rgba(139,92,246,0.2); color: rgba(139,92,246,1); }
+    section { margin-bottom: 36px; }
+    h2 { font-size: 1.1rem; font-weight: 600; color: rgba(139,92,246,0.9); margin-bottom: 12px; }
+    p { margin-bottom: 12px; color: rgba(226,232,240,0.85); }
+    ol { margin: 8px 0 12px 20px; color: rgba(226,232,240,0.85); }
+    ol li { margin-bottom: 10px; }
+    a.contact { color: rgba(139,92,246,0.9); }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.8rem; color: rgba(226,232,240,0.3); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="app-name">Sonet IPTV · Vistavio</div>
+    <h1 id="page-title">Kullanım Koşulları</h1>
+    <div class="updated" id="page-updated">Son güncelleme: Haziran 2026</div>
+    <div class="lang-switch">
+      <a href="#" class="active" id="btn-tr" onclick="setLang('tr');return false;">🇹🇷 Türkçe</a>
+      <a href="#" id="btn-en" onclick="setLang('en');return false;">🇬🇧 English</a>
+    </div>
+  </header>
+
+  <!-- TURKISH -->
+  <div id="content-tr">
+    <section>
+      <h2>Uygulamanın Amacı</h2>
+      <p>Sonet IPTV, yalnızca bir medya oynatıcı uygulamasıdır. İçerik barındırmaz, yayın akışı sağlamaz, abonelik satmaz ve telif hakkı ihlali teşvik etmez.</p>
+    </section>
+    <section>
+      <h2>Kullanım Şartları</h2>
+      <ol>
+        <li>Uygulama yalnızca kullanıcının kendi eklediği <strong>meşru kaynaklara</strong> bağlanmak amacıyla kullanılabilir.</li>
+        <li>Yasadışı içeriklere erişmek için uygulamanın kullanılması kesinlikle yasaktır ve bu durumdan doğan hukuki sorumluluk tamamen kullanıcıya aittir.</li>
+        <li>Vistavio, üçüncü taraf sunucular aracılığıyla erişilen içerikler nedeniyle oluşan herhangi bir zarardan sorumlu tutulamaz.</li>
+        <li>Uygulama, önceden haber verilmeksizin güncellenebilir veya hizmet dışı bırakılabilir.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>İletişim</h2>
+      <p><a class="contact" href="mailto:estevista1@gmail.com">estevista1@gmail.com</a></p>
+    </section>
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="content-en" style="display:none">
+    <section>
+      <h2>Purpose of the App</h2>
+      <p>Sonet IPTV is a media player application only. It does not host content, provide streams, sell subscriptions, or encourage copyright infringement.</p>
+    </section>
+    <section>
+      <h2>Terms of Use</h2>
+      <ol>
+        <li>The app may only be used to connect to <strong>legitimate sources</strong> added by the user.</li>
+        <li>Using the app to access illegal content is strictly prohibited. Any legal liability arising from such use rests solely with the user.</li>
+        <li>Vistavio cannot be held liable for any damage resulting from content accessed through third-party servers.</li>
+        <li>The app may be updated or discontinued at any time without prior notice.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p><a class="contact" href="mailto:estevista1@gmail.com">estevista1@gmail.com</a></p>
+    </section>
+  </div>
+
+  <footer>© 2026 Vistavio · Sonet IPTV</footer>
+</div>
+<script>
+  function setLang(l) {
+    document.getElementById('content-tr').style.display = l === 'tr' ? '' : 'none';
+    document.getElementById('content-en').style.display = l === 'en' ? '' : 'none';
+    document.getElementById('page-title').textContent = l === 'tr' ? 'Kullanım Koşulları' : 'Terms of Service';
+    document.getElementById('page-updated').textContent = l === 'tr' ? 'Son güncelleme: Haziran 2026' : 'Last updated: June 2026';
+    document.getElementById('btn-tr').className = l === 'tr' ? 'active' : '';
+    document.getElementById('btn-en').className = l === 'en' ? 'active' : '';
+  }
+</script>
+</body>
+</html>

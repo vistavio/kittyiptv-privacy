@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası / Privacy Policy — Sonet IPTV</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f13;
+      color: #e2e8f0;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header { margin-bottom: 48px; border-bottom: 1px solid rgba(139,92,246,0.3); padding-bottom: 24px; }
+    .app-name { font-size: 1rem; color: rgba(139,92,246,0.9); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px; }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    .updated { font-size: 0.85rem; color: rgba(226,232,240,0.45); }
+    .lang-switch { margin-top: 16px; display: flex; gap: 8px; }
+    .lang-switch a { font-size: 0.85rem; color: rgba(139,92,246,0.8); text-decoration: none; border: 1px solid rgba(139,92,246,0.3); border-radius: 4px; padding: 3px 10px; }
+    .lang-switch a:hover { background: rgba(139,92,246,0.15); }
+    .lang-switch a.active { background: rgba(139,92,246,0.2); color: rgba(139,92,246,1); }
+    section { margin-bottom: 36px; }
+    section[lang] { display: none; }
+    section[lang].visible { display: block; }
+    h2 { font-size: 1.1rem; font-weight: 600; color: rgba(139,92,246,0.9); margin-bottom: 12px; }
+    p { margin-bottom: 12px; color: rgba(226,232,240,0.85); }
+    ul { margin: 8px 0 12px 20px; color: rgba(226,232,240,0.85); }
+    ul li { margin-bottom: 6px; }
+    a.contact { color: rgba(139,92,246,0.9); }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.8rem; color: rgba(226,232,240,0.3); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="app-name">Sonet IPTV · Vistavio</div>
+    <h1 id="page-title">Gizlilik Politikası</h1>
+    <div class="updated" id="page-updated">Son güncelleme: Haziran 2026</div>
+    <div class="lang-switch">
+      <a href="#" class="active" id="btn-tr" onclick="setLang('tr');return false;">🇹🇷 Türkçe</a>
+      <a href="#" id="btn-en" onclick="setLang('en');return false;">🇬🇧 English</a>
+    </div>
+  </header>
+
+  <!-- TURKISH -->
+  <div id="content-tr">
+    <section>
+      <h2>Uygulama Nedir?</h2>
+      <p>Sonet IPTV, Vistavio tarafından geliştirilen bir medya oynatıcı uygulamasıdır. Bu uygulama herhangi bir içerik, yayın akışı veya oynatma listesi <strong>sunmaz</strong>; yalnızca kullanıcının kendi eklediği sunucularla bağlantı kuran bir arayüzdür.</p>
+    </section>
+    <section>
+      <h2>Toplanan Veriler</h2>
+      <ul>
+        <li>Son izleme geçmişi, favori kanallar ve sunucu bağlantı bilgileri yalnızca <strong>cihazınızda yerel olarak</strong> saklanır.</li>
+        <li>Kullanıcı isteğe bağlı olarak Firebase aracılığıyla bu verileri kendi hesabına bağlı şekilde cihazlar arasında senkronize edebilir. Bu verilere yalnızca kullanıcı erişebilir.</li>
+        <li>Uygulama <strong>reklam sunmaz</strong>, üçüncü taraf analitik araçları kullanmaz ve kişisel veri toplamaz.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>İçerik Sorumluluğu</h2>
+      <p>Uygulama, kullanıcı tarafından sağlanan sunucu adreslerine bağlanır. Sunuculardaki içeriklerin yasallığından <strong>kullanıcı sorumludur</strong>. Vistavio, üçüncü taraf sunucu içeriklerinden hiçbir şekilde sorumlu değildir.</p>
+    </section>
+    <section>
+      <h2>İletişim</h2>
+      <p><a class="contact" href="mailto:estevista1@gmail.com">estevista1@gmail.com</a></p>
+    </section>
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="content-en" style="display:none">
+    <section>
+      <h2>What Is This App?</h2>
+      <p>Sonet IPTV is a media player application developed by Vistavio. This application does <strong>not provide</strong> any content, streams, or playlists; it is purely an interface that connects to servers added by the user.</p>
+    </section>
+    <section>
+      <h2>Data Collected</h2>
+      <ul>
+        <li>Watch history, favorite channels, and server connection details are stored <strong>locally on your device only</strong>.</li>
+        <li>Users may optionally synchronize this data across devices via Firebase, linked to their own account. Only the user can access this data.</li>
+        <li>The app contains <strong>no advertisements</strong>, no third-party analytics, and collects no personal data.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Content Responsibility</h2>
+      <p>The app connects to server addresses provided by the user. The <strong>user is responsible</strong> for the legality of content on those servers. Vistavio is not responsible for any third-party server content.</p>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p><a class="contact" href="mailto:estevista1@gmail.com">estevista1@gmail.com</a></p>
+    </section>
+  </div>
+
+  <footer>© 2026 Vistavio · Sonet IPTV</footer>
+</div>
+<script>
+  function setLang(l) {
+    document.getElementById('content-tr').style.display = l === 'tr' ? '' : 'none';
+    document.getElementById('content-en').style.display = l === 'en' ? '' : 'none';
+    document.getElementById('page-title').textContent = l === 'tr' ? 'Gizlilik Politikası' : 'Privacy Policy';
+    document.getElementById('page-updated').textContent = l === 'tr' ? 'Son güncelleme: Haziran 2026' : 'Last updated: June 2026';
+    document.getElementById('btn-tr').className = l === 'tr' ? 'active' : '';
+    document.getElementById('btn-en').className = l === 'en' ? 'active' : '';
+  }
+</script>
+</body>
+</html>

@@ -38,7 +38,7 @@
   <header>
     <div class="app-name">Kitty IPTV · Vistavio</div>
     <h1 id="page-title">Gizlilik Politikası</h1>
-    <div class="updated" id="page-updated">Son güncelleme: Haziran 2026</div>
+    <div class="updated" id="page-updated">Son güncelleme: Eylül 2026</div>
     <div class="lang-switch">
       <a href="#" class="active" id="btn-tr" onclick="setLang('tr');return false;">🇹🇷 Türkçe</a>
       <a href="#" id="btn-en" onclick="setLang('en');return false;">🇬🇧 English</a>
@@ -54,14 +54,19 @@
     <section>
       <h2>Toplanan Veriler</h2>
       <ul>
-        <li>Son izleme geçmişi, favori kanallar ve sunucu bağlantı bilgileri yalnızca <strong>cihazınızda yerel olarak</strong> saklanır.</li>
-        <li>Kullanıcı isteğe bağlı olarak Firebase aracılığıyla bu verileri kendi hesabına bağlı şekilde cihazlar arasında senkronize edebilir. Bu verilere yalnızca kullanıcı erişebilir.</li>
-        <li>Uygulama <strong>reklam sunmaz</strong>, üçüncü taraf analitik araçları kullanmaz ve kişisel veri toplamaz.</li>
+        <li>Sunucu bağlantı bilgileri (sunucu adresi, kullanıcı adı, şifre), profiller ve indirilen içerikler <strong>yalnızca cihazınızda yerel olarak</strong> saklanır ve hiçbir yere gönderilmez.</li>
+        <li><strong>Cihazlar arası senkronizasyon:</strong> Aynı IPTV hesabını birden fazla cihazda (ör. telefon ve TV kutusu) kullanabilmeniz için favorileriniz, "Listem" içerikleriniz ve izleme geçmişiniz (kaldığınız dakika dahil) Google Firebase (Cloud Firestore) üzerinde otomatik olarak saklanır.</li>
+        <li>Bu kayıt, sunucu adresi, kullanıcı adı ve şifreden <strong>tek yönlü şifreleme (SHA-256)</strong> ile üretilen bir kimlikle tutulur. Sunucu adresiniz, kullanıcı adınız ve şifreniz buluta <strong>gönderilmez</strong>. Kayıtlar listelenemez; bir kayda yalnızca aynı IPTV hesap bilgilerini kullanan cihazlar erişebilir.</li>
+        <li>Uygulama <strong>reklam sunmaz</strong>, üçüncü taraf analitik veya izleme araçları kullanmaz; hesap oluşturma istemez ve adınız, e-postanız, konumunuz gibi kişisel bilgileri toplamaz.</li>
       </ul>
     </section>
     <section>
       <h2>İçerik Sorumluluğu</h2>
       <p>Uygulama, kullanıcı tarafından sağlanan sunucu adreslerine bağlanır. Sunuculardaki içeriklerin yasallığından <strong>kullanıcı sorumludur</strong>. Vistavio, üçüncü taraf sunucu içeriklerinden hiçbir şekilde sorumlu değildir.</p>
+    </section>
+    <section>
+      <h2>Verilerin Silinmesi</h2>
+      <p>Uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde cihazdaki tüm veriler silinir. Uygulama içinde favorilerinizi, "Listem"i ve "Devam Et" kayıtlarını düzenlediğinizde buluttaki kayıt da güncellenir. Buluttaki senkronizasyon kaydınızın tamamen silinmesini isterseniz aşağıdaki adrese e-posta gönderebilirsiniz.</p>
     </section>
     <section>
       <h2>İletişim</h2>
@@ -78,14 +83,19 @@
     <section>
       <h2>Data Collected</h2>
       <ul>
-        <li>Watch history, favorite channels, and server connection details are stored <strong>locally on your device only</strong>.</li>
-        <li>Users may optionally synchronize this data across devices via Firebase, linked to their own account. Only the user can access this data.</li>
-        <li>The app contains <strong>no advertisements</strong>, no third-party analytics, and collects no personal data.</li>
+        <li>Server connection details (server address, username, password), profiles and downloaded content are stored <strong>locally on your device only</strong> and are never sent anywhere.</li>
+        <li><strong>Cross-device sync:</strong> So you can use the same IPTV account on several devices (e.g. phone and TV box), your favorites, "My List" items and watch history (including playback position) are automatically stored in Google Firebase (Cloud Firestore).</li>
+        <li>This record is identified by an ID derived from the server address, username and password using <strong>one-way hashing (SHA-256)</strong>. Your server address, username and password are <strong>not uploaded</strong>. Records cannot be listed; a record can only be accessed by devices using the same IPTV account credentials.</li>
+        <li>The app shows <strong>no advertisements</strong>, uses no third-party analytics or tracking tools, requires no account and does not collect personal information such as your name, e-mail or location.</li>
       </ul>
     </section>
     <section>
       <h2>Content Responsibility</h2>
       <p>The app connects to server addresses provided by the user. The <strong>user is responsible</strong> for the legality of content on those servers. Vistavio is not responsible for any third-party server content.</p>
+    </section>
+    <section>
+      <h2>Data Deletion</h2>
+      <p>Uninstalling the app or clearing its data removes all data stored on the device. When you edit your favorites, "My List" or "Continue Watching" in the app, the cloud record is updated accordingly. To have your cloud sync record deleted completely, send an e-mail to the address below.</p>
     </section>
     <section>
       <h2>Contact</h2>
@@ -100,7 +110,7 @@
     document.getElementById('content-tr').style.display = l === 'tr' ? '' : 'none';
     document.getElementById('content-en').style.display = l === 'en' ? '' : 'none';
     document.getElementById('page-title').textContent = l === 'tr' ? 'Gizlilik Politikası' : 'Privacy Policy';
-    document.getElementById('page-updated').textContent = l === 'tr' ? 'Son güncelleme: Haziran 2026' : 'Last updated: June 2026';
+    document.getElementById('page-updated').textContent = l === 'tr' ? 'Son güncelleme: Eylül 2026' : 'Last updated: September 2026';
     document.getElementById('btn-tr').className = l === 'tr' ? 'active' : '';
     document.getElementById('btn-en').className = l === 'en' ? 'active' : '';
   }
